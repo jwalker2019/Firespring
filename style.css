@@ -1,0 +1,709 @@
+/* General */
+
+    html, body { 
+        font-size: 75%; /* 12px */
+        font-family: 'Roboto', sans-serif;
+        overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6, .cursive {
+        font-family: 'Shrikhand', cursive;
+    }
+
+    .sectionTitle {
+        font-size: 2.625;
+        margin-bottom: 1.75rem;
+    }
+
+    .simpleRow {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .backOne {
+        background-color: #FAEDDE;
+    }
+
+    .backTwo {
+        background-color: #960048;
+    }
+
+    a, a:hover, a:visited, a:active, a:focus {
+        color: #F5A800;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    .textLeft {
+        text-align: left;
+    }
+
+    .textRight {
+        text-align: right;
+    }
+
+    button {
+        border-radius: 1.8125rem;
+        height: 3.75rem;
+        width: 13.75rem;
+        font-size: 1.25rem;
+        line-height: 1.125rem;
+        font-weight: 500;
+        border: none;
+    }
+
+    section /* Mobile Padding */ {
+        padding: 4rem 3.5rem;
+    }
+
+
+/* Header */
+
+    header {
+        min-height: 100.13px;
+        width: 100%;
+    }
+
+    .logoWrap {
+        margin: auto;
+    }
+
+    header .mainLogo {
+        width: 100%;
+        max-width: 264px;
+        margin: auto;
+        padding: 1.5rem;
+    }
+
+
+    header nav a, header nav a:visited, header nav a:focus {
+        color: white;
+    }
+
+    header nav a:hover, header nav a:active, .nowLink, .nowLink:visited, .nowLink:active, .nowLink:focus {
+        color: #F5A800;
+    }
+
+    
+
+/* Nav */
+
+    nav a {
+        display: inline-block;
+        font-size: 1.125rem;
+        line-height: 1.3125rem;
+        font-weight: bold;
+    }
+
+    nav a:hover, nav a:visited, nav a:active, nav a:focus {
+        text-decoration: none;
+    }
+
+    .dropdown-menu {
+        border-radius: 0;
+        padding: 0;
+        border: none;
+        position: absolute;
+    }
+
+    
+
+    .dropright .sub-menu {
+        margin-left: 0;
+    }
+
+    .sub-menu a {
+        background-color: #82003E;
+        width: 11.25rem;
+    }
+
+    a:hover + .sub-menu {
+        display: block;
+    }
+
+    .sub-menu:hover {
+        display: block;
+    }
+
+    .submenuWrap:hover > a {
+        background-color: #82003E;
+    }
+
+    .mobileMenuTrigger {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 1.5rem;
+        color: white;
+    }
+
+    .mainNav {
+        display: none;
+    }
+
+    .showMobileMenu {
+        display: block;
+        margin-top: 2rem;
+    }
+
+    nav.showMobileMenu a {
+        display: block;
+    }
+
+    .topNav {
+        display: block !important;
+    }
+
+    .topNav .showMobileMenu a {
+        text-align: center;
+        padding: 2.8rem;
+        border-top: 1px solid black;
+        font-size: 1.7rem;
+    }
+
+    #whoDropMenu {
+        display: none;
+    }
+
+/* Mobile Nav */
+
+    .modal-header {
+        background-color: #82003E;
+        color: white;
+        border-bottom: none;
+        padding: 1.5rem 3rem;
+        font-size: 1.7rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    .modal-header .close {
+        font-size: 3rem;
+        text-align: right;
+        padding: 0;
+    }
+
+    .modal-title {
+        width: 100%;
+    }
+
+    .modal-content {
+        border-radius: 1.2rem;
+    }
+
+    .modal-body {
+        background-color: #960048;
+        padding: 0;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    .modal-body a {
+        display: block;
+        font-size: 1.7rem;
+        padding: 1.5rem 3rem;
+        color: white;
+        border-top: 1px solid black;
+    }
+
+    .modal-body .subnav {
+        padding-left: 4.5rem;
+        font-size: 1.6rem;
+    }
+    
+
+/* Home Hero */
+
+    .homeHero {
+        background-image: url("images/main_hero.png");
+        height: auto;
+        min-height: 85vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        color: white;
+    }
+
+    .homeHero .heroText {
+        text-align: center;
+        color: white;       
+    }
+
+    .homeHero h1 {
+        font-size: 5.0625rem;
+        letter-spacing: -.0625rem;
+    }
+
+    .homeHero p {
+        font-size: 1.875rem;
+        line-height: 2.625rem;
+        margin-top: 2.1rem;
+    }
+
+    .homeHero button {
+        background-color: #F5A800;
+        margin-top: 2.875rem;
+    }
+
+    .homeHero button i {
+        color: white;
+        margin-right: 1.1rem;
+    }
+
+    .homeHero button:hover, .homeHero button:focus {
+        -webkit-box-shadow: -.6875rem .6875rem 0 0 rgba(0,0,0,1);
+        -moz-box-shadow: -.6875rem .6875rem 0 0 rgba(0,0,0,1);
+        box-shadow: -.6875rem .6875rem 0 0 rgba(0,0,0,1);
+    }
+
+/* Latest News */
+
+    .latestNews {
+        background-image: url("images/news_back.jpg");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .latestNewsText {
+        max-width: 75rem;
+        margin: auto;
+    }
+
+    .highlightBox {
+        background-color: #F5A800;
+        padding: 2rem;
+        color: white;
+        min-width: 16.75rem;
+        margin-bottom: 3rem;
+    }
+
+    .dateLabel {
+        font-size: .875rem;
+        line-height: 1.125rem;
+    }
+
+    .dateLabel h6 {
+        font-size: 1.625rem;
+        line-height: 1.25rem;
+    }
+
+    .highlightBox i {
+        display: block;
+        font-size: 1.125rem;
+        margin-top: 1.375rem;
+    }
+
+    .highlightBox a {
+        color: black;
+        font-size: 2.0625rem;
+        line-height: 2.3125rem;
+        margin-bottom: .625rem;
+        display: block;
+    }
+
+    .highlightBox p {
+        font-size: 1.125rem;
+        line-height: 1.2778rem;
+    }
+
+    .newsLine {
+        border-top: 1px solid rgba(82,82,82,.4);
+        min-height: 5.25rem;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 1.5rem 0;
+    }
+
+    .newsLine .dateLabel {
+        color: #AFAFAF;
+    }
+
+    .newsLine .dateLabel h6 {
+        color: black;
+    }
+
+    .newsLine .newsTitle {
+        margin: 1.2rem 1rem;
+    }
+
+    .newsLine a {
+        color: black;
+        font-size: 1.6rem;
+    }
+
+    .newsLine a i {
+        text-decoration: none;
+        color: black;
+        margin-left: 1.375rem;
+    }
+
+    .newsLine a:hover i {
+        color: #F5A800;
+    }
+
+    .latestNews button {
+        margin-top: 2.3125rem;
+        background-color: black;
+        color: white;
+    }
+
+    .latestNews button:hover, .latestNews button:focus {
+        -webkit-box-shadow: -.6875rem .6875rem 0 0 rgba(245,168,0,1);
+        -moz-box-shadow: -.6875rem .6875rem 0 0 rgba(245,168,0,1);
+        box-shadow: -.6875rem .6875rem 0 0 rgba(245,168,0,1);
+    }
+
+/* What We Do */
+
+    .weDo {
+        text-align: left;
+        background: #FAEDDE;
+    }
+
+    .weDoBanner {
+        background-image: url("images/what_banner.jpg");
+        height: auto;
+        min-height: 25rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .weDoText {
+        max-width: 70rem;
+        margin: auto;
+    }
+
+    .weDoLinks a {
+        color: black;
+        display: block;
+        font-weight: bold;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        margin-bottom: 1rem;
+    }
+
+    .weDoLinks .subLink {
+        font-weight: normal;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        margin-left: 1.5rem;
+    }
+
+    .weDoTitle {
+        font-size: 2.625rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .pLarge {
+        font-size: 1.4375rem;
+        line-height: 2.0625rem;
+        margin-bottom: 1.75rem;
+        padding-right: 3rem;
+    }
+
+    .weDo p {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        margin-bottom: 2.8125rem;
+        padding-right: 3.75rem;
+    }
+
+    .weDo .midImg {
+        margin-bottom: 2.5rem;
+    }
+
+    .caption {
+        color: #CBAD6C;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+    }
+
+    .weDo h1 {
+        font-size: 1.875rem;
+        line-height: 2.75rem;
+    }
+
+    .weDo h2 {
+        font-size: 1.625rem;
+        line-height: 2.375rem;
+    }
+
+    .weDo h3 {
+        font-size: 1.4375rem;
+        line-height: 2.125rem;
+    }
+
+    .weDo h4 {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+    }
+
+    .weDo input[type="text"] {
+        border-radius: .25rem;
+        width: 100%;
+        border: 1px solid #CBAD6C;
+        height: 3.25rem;
+        padding: .813rem 1rem;
+        margin-bottom: 1.875rem;
+    }
+
+    .weDo button {
+        background-color: #960048;
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+
+    .weDo button:hover, .weDo button:focus {
+        -webkit-box-shadow: -.6875rem .6875rem 0 0 rgba(0,0,0,1);
+        -moz-box-shadow: -.6875rem .6875rem 0 0 rgba(0,0,0,1);
+        box-shadow: -.6875rem .6875rem 0 0 rgba(0,0,0,1)
+    }
+
+/* Footer Sign Up */
+
+    footer {
+        text-align: center;
+    }
+
+    .signUp {
+        background-color: #0033A1;
+        color: white;
+    }
+
+    .signUpText {
+        max-width: 45.725rem;
+        margin: auto;
+    }
+
+    .signUp input[type="text"] {
+        padding: .65rem 1.8125rem;
+        border: none;
+        border-radius: .25rem;
+        font-size: 1.25rem;
+        height: 3.75rem;
+        margin-bottom: 1rem;
+        display: block;
+        width: 100%;
+    }
+
+    .signUp button {
+        border-radius: 1.875rem;
+        font-size: 1.25rem;
+        width: 10rem;
+        height: 3.75rem;
+        background-color: #F5A800;
+        color: black;
+        margin-bottom: 1rem;
+    }
+
+    .signUp button:hover {
+        color: white;
+    }
+
+    .signUp button i {
+        margin-right: .5rem;
+        color: white;
+    }
+
+    .signUp p {
+        color: #7A97D4;
+    }
+
+    .signUp .footerSocial {
+        font-size: 1.625rem;
+    }
+
+    .footerSocial a i {
+        padding: 1.8125rem 1.21875rem 0;
+        color: white;
+    }
+
+    .footerSocial a:hover i {
+        color: #F5A800;
+    }
+
+/* Footer Links */
+
+    .footerLinks {
+        background-color: black;
+        color: white;
+        line-height: 1.625rem;
+    }
+
+    .footerLinks img {
+        margin-bottom: 2rem;
+    }
+
+    .footerLinksText {
+        max-width: 40rem;
+        margin: auto;
+    }
+
+    .copyright {
+        margin-top: 3.8125rem;
+    }
+
+
+/* Media Quieries */
+
+
+    /* Small devices (landscape phones, 576px and up) */
+    @media (min-width: 576px) { 
+        .signUp input[type="text"] {
+            border-radius: 1.875rem 0 0 1.875rem;
+            display: inline;
+            width: auto;
+            
+        }
+    
+        .signUp button {
+            border-radius: 0 1.875rem 1.875rem 0;
+        }
+
+    }
+
+    /* Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) { 
+        .newsLine .newsTitle {
+            text-align: left;
+            margin: 0;
+        }
+
+        .newsLine .newsOptions {
+            text-align: right;
+        }
+
+        .newsLine a {
+            font-size: 1.4375rem;
+        }
+
+     }
+
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) { 
+        html, body {
+            font-size: 100%; /* 16px */
+        }
+
+        .topNav {
+            padding-left: 5.625rem;
+            padding-right: 1.875rem;
+            display: flex !important;
+        }
+
+        header .mainLogo {
+            padding: 0;
+        }
+
+        .mobileMenuTrigger {
+            display: none;
+        }
+
+        .topLink {
+            padding: .3125rem 0 .3125rem 1.8rem;
+        }
+
+        #dropSub2 + .sub-menu {
+            top: 3.7rem;
+        }
+
+        #dropSub3 + .sub-menu {
+            top: 7.45rem;
+        }
+
+        .homeHero {
+            min-height: 33.125rem;
+            height: 100vh;
+        }
+
+        .homeHero h1 {
+            margin-top: 2.8rem;
+        }
+
+        .homeHero .heroText {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 60.2rem;
+        }
+
+        .latestNews {
+            padding: 4.875rem 2rem;
+        }
+
+        .signUp {
+            padding: 4.7rem 0 2.75rem;
+        }
+
+        .signUp input[type="text"] {
+            width: 35.625rem;
+        }
+
+        .footerLinks {
+            padding: 4.4375rem 3rem 3.8125rem;
+        }
+
+        .mainNav  {
+            display: inline-block;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 1.1875rem 3.25rem 1.25rem 1.75rem;
+            background-color: #960048;
+        }
+    
+        .dropdown-menu a:hover, .dropdown-menu a:focus {
+            background-color: #82003E;
+        }
+    
+        .dropright {
+            transform: translate3d(90px, -3px, 0px);
+        }
+
+        #whoDropMenu {
+            display: inline-block;
+        }
+
+        #whoMobileMenu {
+            display: none;
+        }
+
+        .weDo {
+            padding: 3.5625rem 2rem 6.125rem;
+        }
+
+        .weDoBanner {
+            min-height: 30rem;
+        }
+     }
+
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) { 
+        header {
+            position: absolute;
+            z-index: 1000;
+        }
+
+        .highlightBox {
+            margin-bottom: 0;
+            height: 100%;
+        }
+
+        .newsLine {
+            margin-left: 1rem;
+            padding: 0;
+        }
+
+        .weDoBanner {
+            min-height: 40rem;
+        }
+
+    }

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Firespring Test">
+        <meta name="author" content="JaycelynB">
+        <title>Meditation Foundation</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Shrikhand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+
+    </head>
+
+    <body>
+        <header class="row simpleRow">
+            <div class="col-lg-6 backOne d-flex align-items-center">
+                <a href="index.html" class="logoWrap"><img src="images/Logo.png" class="mainLogo"></a>
+            </div>
+            <div class="col-lg-6 backTwo d-flex align-items-center topNav">
+                <div class="mobileMenuTrigger" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i> MENU</div>
+                <nav class="mainNav" id="mainNav">
+                    <a href="" class="topLink" id="whoMobileMenu" data-toggle="modal" data-target="#mobileMenu">Who We Are</a>
+                    <a href="" class="topLink" id="whoDropMenu" data-toggle="dropdown" onmouseover="showMenu()" disabled>Who We Are</a>
+
+                    <div class="dropdown-menu dropright" aria-labelledby="dropdownMenuLink" id="showDropMenu">
+                        <div class="submenuWrap">
+                            <a href="" id="dropSub1" data-toggle="dropdown">Subnav Item</a>
+                            <div class="dropdown-menu sub-menu" aria-labelledby="dropSub1">
+                                <a href="">Subnav Item</a>
+                                <a href="">Subnav Item</a>
+                                <a href="">Subnav Item</a>
+                            </div>
+                        </div>
+                        <div class="submenuWrap">
+                            <a href="" id="dropSub2" data-toggle="dropdown">Subnav Item</a>
+                            <div class="dropdown-menu sub-menu" aria-labelledby="dropSub2">
+                                <a href="">Subnav Item</a>
+                                <a href="">Subnav Item</a>
+                                <a href="">Subnav Item</a>
+                            </div>
+                        </div>
+                        <div class="submenuWrap">
+                            <a href="" id="dropSub3" data-toggle="dropdown">Subnav Item</a>
+                            <div class="dropdown-menu sub-menu" aria-labelledby="dropSub3">
+                                <a href="">Subnav Item</a>
+                                <a href="">Subnav Item</a>
+                                <a href="">Subnav Item</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="interior.html" class="topLink" onmouseover="hideMenu()">What We Do</a>
+                    <a href="" class="topLink">How to Help</a>
+                    <a href="" class="topLink nowLink">Meditate Now</a>
+                    
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="homeHero d-flex align-items-center" onmouseover="hideMenu()">
+                <div class="heroText">
+                    <h1>We’re here to ohmm.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <button>
+                        <i class="far fa-clock"></i> Meditate Now
+                    </button>
+                </div>
+            </section>
+            <section class="latestNews">
+                <div class="latestNewsText">
+                    <h1 class="sectionTitle">Latest News</h1>
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="highlightBox">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="dateLabel">
+                                            NOV
+                                            <h6>30</h6>
+                                        </div>
+                                        <i class="far fa-comment"></i>
+                                        <i class="fas fa-share"></i>
+                                    </div>
+                                    <div class="col-9 textLeft">
+                                        <a href="" class="cursive">
+                                            News Story Number One Goes Here
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-8">
+                            <div class="row newsLine d-flex align-items-center">
+                                <div class="dateLabel col-md-2">
+                                    NOV
+                                    <h6>30</h6>
+                                </div>
+                                <div class="col-md-8 newsTitle cursive">
+                                    <a href="">News Story Number Two Goes Here</a>
+                                </div>
+                                <div class="col-md-2 newsOptions">
+                                    <a href=""><i class="fas fa-share"></i></a>
+                                    <a href=""><i class="far fa-comment"></i></a>
+                                </div>
+                            </div>
+                            <div class="row newsLine d-flex align-items-center">
+                                <div class="dateLabel col-md-2">
+                                    NOV
+                                    <h6>17</h6>
+                                </div>
+                                <div class="col-md-8 newsTitle cursive">
+                                    <a href="">News Story Number Three Goes Here</a>
+                                </div>
+                                <div class="col-md-2 newsOptions">
+                                    <a href=""><i class="fas fa-share"></i></a>
+                                    <a href=""><i class="far fa-comment"></i></a>
+                                </div>
+                            </div>
+                            <div class="row newsLine d-flex align-items-center">
+                                <div class="dateLabel col-md-2">
+                                    NOV
+                                    <h6>08</h6>
+                                </div>
+                                <div class="col-md-8 newsTitle cursive">
+                                    <a href="">News Story Number Four Goes Here</a>
+                                </div>
+                                <div class="col-md-2 newsOptions">
+                                    <a href=""><i class="fas fa-share"></i></a>
+                                    <a href=""><i class="far fa-comment"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button>
+                        More News
+                    </button>
+                </div>
+            </section>
+            
+        </main>
+        <footer>
+            <section class="signUp">
+                <div class="signUpText">
+                    <h1 class="sectionTitle">Sign up for our emails</h1>
+                    <input type="text" placeholder="Email Address"><button><i class="far fa-envelope"></i> Send</button>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                    <div class="footerSocial">
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-pinterest"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </section>
+            <section class="footerLinks">
+                <div class="footerLinksText">
+                    <img src="images/Logo-White.png" class="img-fluid">
+                    <div class="row">
+                        <div class="col-4">
+                            1201 Infinity Ct.<br>
+                            Lincoln, NE 68512<br>
+                            ph: 402-555-1234<br>
+                            <a href="">info@abc123.org</a>
+                        </div>
+                        <div class="col-4">
+                            <a href="">Who We Are</a><br>
+                            <a href="">What We Do</a><br>
+                            <a href="">How to Help</a><br>
+                            <a href="">Where to Start</a>
+                        </div>
+                        <div class="col-4">
+                            <a href="">Donate</a><br>
+                            <a href="">Contact Us</a><br>
+                            <a href="">Privacy Policy</a><br>
+                            <a href="">Terms of Use</a>
+                        </div>
+                    </div>
+                    <div class="copyright"><i class="far fa-copyright"></i> 2019 The Meditation Foundation</div>
+                </div>
+            </section>
+        </footer>
+
+        <!-- MobileMenu -->
+        <div class="modal fade" id="mobileMenu" tabindex="-1" role="dialog" aria-labelledby="mobileMenu" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title" id="exampleModalLabel">Who We Are</div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="">Subnav Item</a>
+                            <a href="" class="subnav">Subnav Item</a>
+                            <a href="" class="subnav">Subnav Item</a>
+                            <a href="" class="subnav">Subnav Item</a>
+                        <a href="">Subnav Item</a>
+                            <a href="" class="subnav">Subnav Item</a>
+                            <a href="" class="subnav">Subnav Item</a>
+                            <a href="" class="subnav">Subnav Item</a>
+                        <a href="">Subnav Item</a>
+                            <a href="" class="subnav">Subnav Item</a>
+                            <a href="" class="subnav">Subnav Item</a>
+                            <a href="" class="subnav">Subnav Item</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+    
+</html>
